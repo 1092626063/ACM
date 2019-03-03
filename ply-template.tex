@@ -1,0 +1,182 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{fancyhdr}  % 页眉页脚
+\usepackage{minted}    % 代码高亮
+\usepackage[colorlinks]{hyperref}  % 目录可跳转
+\usepackage{geometry}
+\geometry{left=1cm,right=1cm,top = 2cm,bottom = 2cm}
+\setlength{\headheight}{15pt}
+\setlength{\parindent}{1em}
+% 定义页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{ACM Template of Hugh Locke}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\author{Hugh Locke}   
+\title{ACM模板}
+
+\begin{document} 
+\maketitle % 封面
+\newpage % 换页
+
+\tableofcontents % 目录
+\newpage
+\section{一切的开始} % 一级标题
+\subsection{头文件与预处理} % 二级标题
+\inputminted[breaklines]{c++}{其他/start.cpp} % 插入代码文件
+\subsection{读入挂} % 二级标题
+\inputminted[breaklines]{c++}{其他/读入挂.cpp} % 插入代码文件
+\section{图论} % 一级标题
+
+\subsection{图论的基础} % 二级标题
+\subsubsection{链式前向星} % 三级标题
+\inputminted[breaklines]{c++}{图论/init.cpp} % 插入代码文件
+
+\subsection{最短路} % 二级标题
+\subsubsection{堆优化Dijkstra} % 三级标题
+\inputminted[breaklines]{c++}{图论/Dijkstra.cpp} % 插入代码文件
+\subsubsection{SPFA} % 三级标题
+\inputminted[breaklines]{c++}{图论/SPFA.cpp} % 插入代码文件
+\subsubsection{Floyd} % 三级标题
+\inputminted[breaklines]{c++}{图论/Floyd.cpp} % 插入代码文件
+
+\subsection{分层图} % 二级标题
+\inputminted[breaklines]{c++}{图论/分层图.cpp} %插入代码文件
+
+\subsection{二分图匹配} % 二级标题
+\inputminted[breaklines]{c++}{图论/二分图匹配.cpp} % 插入代码文件
+
+\subsection{最大流} % 二级标题
+\subsubsection{Dinic} % 三级标题
+\inputminted[breaklines]{c++}{图论/Dinic.cpp} % 插入代码文件
+\subsubsection{最小割} % 三级标题
+\inputminted[breaklines]{c++}{图论/最小割.cpp} %插入代码文件
+\subsubsection{最大权闭合子图} % 三级标题
+\inputminted[breaklines]{c++}{图论/最大权闭合子图.cpp} % 插入代码文件
+\subsection{最小覆盖} % 二级标题
+\subsubsection{DAG最小点路径覆盖} % 三级标题
+\inputminted[breaklines]{c++}{图论/最小点路径覆盖.cpp} % 插入代码文件
+\subsection{费用流} % 二级标题
+\subsubsection{SPFA费用流} % 三级标题
+\inputminted[breaklines]{c++}{图论/SPFA费用流.cpp} % 插入代码文件
+
+\subsection{Tarjan} % 二级标题
+
+\subsubsection{割点} % 三级标题
+\inputminted[breaklines]{c++}{图论/割点.cpp} % 插入代码文件
+
+\subsubsection{缩点} % 三级标题
+\inputminted[breaklines]{c++}{图论/缩点.cpp} % 插入代码文件
+
+\subsection{树上k半径覆盖} % 二级标题
+\inputminted[breaklines]{c++}{图论/树上k半径覆盖.cpp} % 插入代码文件
+
+
+\subsection{dfs序} % 二级标题
+\inputminted[breaklines]{c++}{图论/dfs序.cpp} % 插入代码文件
+
+\subsection{LCA} % 二级标题
+\inputminted[breaklines]{c++}{图论/LCA.cpp} % 插入代码文件
+
+\subsection{点分治} % 二级标题
+\inputminted[breaklines]{c++}{图论/点分治.cpp} % 插入代码文件
+
+\subsection{树上差分} % 二级标题
+\inputminted[breaklines]{c++}{图论/树上差分.cpp} % 插入代码文件
+
+\subsection{树链剖分} % 二级标题
+\inputminted[breaklines]{c++}{图论/树链剖分.cpp} % 插入代码文件
+
+\section{数据结构} % 一级标题
+
+\subsection{链表} % 二级标题
+\inputminted[breaklines]{c++}{数据结构/链表.cpp} 
+
+\subsection{并查集} % 二级标题
+\subsubsection{可撤销并查集} % 三级标题
+\inputminted[breaklines]{c++}{数据结构/可撤销并查集.cpp} 
+
+\subsubsection{种类并查集} % 三级标题
+\inputminted[breaklines]{c++}{数据结构/种类并查集.cpp} 
+
+\subsection{启发式合并} % 二级标题
+\inputminted[breaklines]{c++}{数据结构/启发式合并.cpp} 
+
+
+\subsection{ST表} % 二级标题
+\inputminted[breaklines]{c++}{数据结构/ST表.cpp}
+
+\subsection{动态开点线段树} % 二级标题
+\inputminted[breaklines]{c++}{数据结构/动态开点线段树.cpp}
+
+\subsection{主席树} % 二级标题
+\subsubsection{静态区间第k小} % 三级标题
+\inputminted[breaklines]{c++}{数据结构/静态区间第k小.cpp}
+
+
+\section{字符串} % 一级标题
+\subsection{Hash} % 二级标题
+\subsubsection{字符串Hash} % 三级标题
+\inputminted[breaklines]{c++}{字符串/字符串Hash.cpp} 
+
+\subsubsection{图上Hash} % 三级标题
+\inputminted[breaklines]{c++}{字符串/图上Hash.cpp} 
+
+\subsection{Trie树} % 二级标题
+\inputminted[breaklines]{c++}{字符串/Trie树.cpp} 
+
+\subsection{AC自动机} % 二级标题
+\inputminted[breaklines]{c++}{字符串/AC自动机.cpp} 
+
+\subsection{fail树} % 二级标题 
+\inputminted[breaklines]{c++}{字符串/fail树.cpp} 
+
+\subsection{后缀数组} % 二级标题 
+\inputminted[breaklines]{c++}{字符串/后缀数组.cpp} 
+
+\section{动态规划} % 一级标题
+\subsection{悬线法dp} % 二级标题
+\inputminted[breaklines]{c++}{动态规划/悬线法dp.cpp} % 插入代码文件
+
+\section{数论} % 一级标题
+
+\subsection{gcd} % 二级标题
+\inputminted[breaklines]{c++}{数论/gcd.cpp} % 插入代码文件
+
+\subsection{康拓展开} % 二级标题
+\inputminted[breaklines]{c++}{数论/康拓展开.cpp} % 插入代码文件
+
+\subsection{数的位数公式} % 二级标题
+\inputminted[breaklines]{c++}{数论/数的位数公式.cpp} % 插入代码文件
+
+\subsection{矩阵快速幂} % 二级标题
+\inputminted[breaklines]{c++}{数论/矩阵快速幂.cpp} % 插入代码文件
+
+\subsection{欧拉定理} % 二级标题
+\subsubsection{ap互质} % 三级标题
+\begin{equation}
+a ^ b \% p = (a \% p) ^ {b \% \Phi(p)}  \% p
+\end{equation}
+\subsubsection{扩展欧拉定理 ap不互质} % 三级标题
+\begin{equation}
+a ^ b \% p = (a \% p ) ^ {\Phi(p) + b \% \Phi(p)} \% p (b >= \Phi(p))
+\end{equation}
+\begin{equation}
+a ^ b \% p = (a \% p ) ^ b \% p (b < \Phi(p))
+\end{equation}
+
+
+\section{其他} % 一级标题
+\subsection{整数三分} % 二级标题
+\inputminted[breaklines]{c++}{其他/整数三分.cpp} % 插入代码文件
+
+\subsection{离散化} % 二级标题
+\inputminted[breaklines]{c++}{其他/离散化.cpp}
+
+\subsection{注意事项} % 二级标题
+\input{其他/注意事项.txt}
+
+\end{document}
